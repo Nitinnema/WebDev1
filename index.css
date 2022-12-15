@@ -17,12 +17,8 @@ header {
   background-color: #1cd0e0;
 }
 
-main {
-  margin: 3em auto;
-}
-
 .store-logo {
-  max-width: 180px;
+  max-width: 22vh;
   min-width: 100px;
 }
 
@@ -39,9 +35,10 @@ main {
 .nav-item,
 #store-name {
   text-decoration: none;
-  text-transform: uppercase;
+
   letter-spacing: 2px;
   color: black;
+  font-size: 1.1em;
 }
 
 .nav-item:hover {
@@ -106,7 +103,8 @@ main {
   border-radius: 3px;
   box-shadow: 5px 5px 15px grey;
   padding: 1.5em;
-  max-width: 350px;
+  /* max-width: 35%; */
+  max-width: 400px;
   margin: 1em auto 1.5em auto;
 }
 
@@ -168,7 +166,7 @@ label {
 
 .product-viewings {
   text-align: center;
-  margin-top: 3em;
+  margin-top: 1.5em;
   font-size: 1.5em;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -176,7 +174,7 @@ label {
 
 .products-container {
   width: 90%;
-  margin: 5em auto;
+  margin: 2em auto;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -271,23 +269,34 @@ label {
   display: flex;
   justify-content: center;
   width: 90%;
-  margin: 3em auto;
+  margin: 1.5em auto;
 }
 
 .about-us-section {
   width: 90%;
   margin: 0 auto;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  line-height: 1.5em;
 }
 
 .stores-info-container {
-  max-width: 50%;
+  max-width: 80%;
   margin: 2em auto;
   text-align: center;
   border: 0.5px solid black;
   border-radius: 0.3em;
-  box-shadow: 5px 5px 5px grey;
+  box-shadow: 1px 1px 1px grey;
   padding: 1.5em;
+}
+
+.store-info a {
+  margin-left: 10px;
+}
+
+iframe {
+  border: 0;
+  max-width: 100%;
+  margin: 1em auto;
 }
 
 .stores-info-container h4 {
@@ -303,17 +312,16 @@ label {
 }
 
 @media (max-width: 1120px) {
+  /* .purchase-form,
+  .signIn-form,
+  .signUp-form {
+    max-width: 40%;
+    margin: 10px auto;
+  } */
   .product {
     min-width: 250px;
-    /* font-size: 0.9em; */
   }
 }
-
-/* @media (max-width: 900px) {
-  header {
-    font-size: 0.8em;
-  }
-} */
 
 @media (max-width: 680px) {
   header {
@@ -329,10 +337,26 @@ label {
 
 @media (max-width: 550px) {
   header {
-    font-size: 0.7em;
+    font-size: 0.5em;
+    /* display: block; */
+    display: flex;
+    justify-content: space-between;
   }
-  .store-logo {
+  #nav-bar {
+    margin: 6px auto;
+  }
+  /* .store-logo {
     width: 60%;
+    margin-left: 33%;
+  } */
+  .store-logo {
+    width: 20%;
+  }
+  .purchase-form,
+  .signIn-form,
+  .signUp-form {
+    max-width: 70%;
+    margin: 10px auto;
   }
 }
 
@@ -366,6 +390,7 @@ footer * {
 
 ul {
   list-style: none;
+  line-height: 1.5em;
 }
 
 .fcolumn h4 {
@@ -401,7 +426,7 @@ ul {
 
 .fcolumn ul li a:hover {
   color: #ffffff;
-  padding-left: 8px;
+  padding-left: 4px;
 }
 
 .fcolumn .social-sites a img {
@@ -441,14 +466,14 @@ site-map * {
 }
 
 .scolumn {
-  width: 30%;
+  width: 38%;
   padding: 0 15px;
-  margin-left: auto;
   margin-right: auto;
 }
 
 .sitemap li {
   list-style: none;
+  margin-top: 5px;
 }
 
 .scolumn h4 {
@@ -481,7 +506,7 @@ site-map * {
   transition: all 0.3s ease;
 }
 
-.scolumn ul li a:hover {
-  color: #ffffff;
-  padding-left: 8px;
+.scolumn li a:hover {
+  color: tomato;
+  padding-left: 5px;
 }
